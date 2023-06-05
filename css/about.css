@@ -1,0 +1,137 @@
+/* ABOUT US PAGE */
+
+header {
+    width: 100%;
+    height: calc(100vh - 5rem);
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 4rem;
+    overflow: hidden;
+    align-items: center;
+}
+
+header .img-block{
+    overflow: hidden;
+}
+
+header img {
+    width: 600px;
+    height: 400px;
+    object-fit: contain;
+}
+
+header h1 {
+    text-align: center;
+    margin: 0rem 0 4rem 0;
+    color: var(--color-primary);
+}
+
+.features {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 500px;
+    margin-top: 2rem;
+}
+
+.features h2 {
+    align-self: start;
+    text-align: center;
+    border-top: 4px solid;
+    border-left: 4px solid;
+    border-left-style: dashed;
+    border-top-style: dashed;
+    border-left-color: black;
+    border-top-color: black;
+    padding: 1rem;
+    color: #7B2844;
+}
+
+.features h2:nth-child(1) {
+    grid-row-start: 3;
+}
+
+.features h2:nth-child(2) {
+    grid-row-start: 2;
+    grid-column-start: 2;
+}
+
+.features h2:nth-child(3) {
+    grid-row-start: 1;
+    grid-column-start: 3;
+}
+
+.aboutus__container {
+    margin: 5rem 6rem;
+}
+
+.aboutus__container h2 {
+    text-align: center;
+    margin: 3rem 0 2rem 2rem;
+}
+
+.aboutus__container p {
+    text-align: center;
+}
+
+.our__mission {
+    margin: 5rem 6rem;
+    padding: 4rem;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+}
+
+.our__mission h2{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.our__mission img {
+    height: 200px;
+    width: 300px;
+    margin: auto;
+}
+
+.our__approach {
+    margin: 5rem 6rem;
+    padding: 4rem;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+}
+
+.our__approach h2{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.our__approach img {
+    height: 200px;
+    width: 300px;
+    margin: auto;
+}
+
+.contactus{
+    padding: 3rem 6rem;
+    margin: 2rem 0 0;
+    background-color: #f5f3f1;
+}
+
+.contactus h2{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.contactus button{
+    display: block;
+    margin: 1rem auto 0;
+}

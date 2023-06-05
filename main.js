@@ -8,4 +8,8 @@ $(document).ready(function () {
     autoplayTimeout: 1000,
     autoplayHoverPause: false,
   });
+
+  AOS.init({
+    duration: 1200,
+  });
 });
