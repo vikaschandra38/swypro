@@ -1,21 +1,33 @@
 header {
     width: 100%;
-    height: calc(100vh - 5rem);
+    height: calc(100vh - 4rem);
     position: relative;
     margin-bottom: 4rem;
-    background-image: url(../images/requirements.webp);
+    background-image: url(../images/Sprinkle.svg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+header img{
+    width: 500x;
+    height: 500px;
+}
+
 header h1 {
     text-align: center;
-    color: #eefbff;
+    color: white;
+}
+
+header h1 span{
+    color: #f9ff00;
+}
+
+main{
+    background-color: whitesmoke;
 }
 
 .our__requirements {
@@ -36,18 +48,8 @@ header h1 {
 .tech_stack .card {
     position: relative;
     border-radius: 10px;
+    cursor: pointer;
 }
-
-/* .tech_stack .card .icon {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #f00;
-    transition: 0.7s;
-    z-index: 1;
-} */
 
 .tech_stack .card .icon {
     background: #ffffff;
@@ -55,31 +57,17 @@ header h1 {
     justify-content: center;
     align-items: center;
     width: 100px;
+    transition: 0.7s;
 }
 
-.tech_stack .card .icon .fa {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 80px;
-    transition: 0.7s;
-    color: #fff;
-}
-
-i {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 80px;
-    transition: 0.7s;
-    color: #fff;
+.tech_stack .card .icon img {
+    height: 180px;
+    width: 200px;
 }
 
 .tech_stack .card .face {
     width: 300px;
-    height: 200px;
+    height: 180px;
     transition: 0.5s;
 }
 
@@ -90,12 +78,14 @@ i {
     justify-content: center;
     align-items: center;
     z-index: 1;
-    transform: translateY(100px);
-    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+    transform: translateY(80px);
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
 }
 
 .tech_stack .card:hover .face.face1 {
     transform: translateY(0px);
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
 }
 
 .tech_stack .card .face.face1 .content {
@@ -119,7 +109,9 @@ i {
     align-items: center;
     padding: 20px;
     box-sizing: border-box;
-    transform: translateY(-100px);
+    transform: translateY(-80px);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 
 .tech_stack .card:hover .face.face2 {
@@ -141,7 +133,6 @@ i {
     color: white;
 }
 
-.tech_stack a {
-    text-decoration: none;
-    color: white;
+.tech_stack .card .face.face2 .content h3 a {
+    color: #f9ff00;
 }
