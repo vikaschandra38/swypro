@@ -1,13 +1,10 @@
 /* ABOUT US PAGE */
 
-header {
-    width: 100%;
+.aboutus__header {
+    margin: 5rem 6rem;
     height: calc(100vh - 5rem);
-    position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-bottom: 4rem;
-    overflow: hidden;
     align-items: center;
 }
 
@@ -84,7 +81,6 @@ header h1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
-    box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
 }
 
 .our__mission h2{
@@ -98,6 +94,15 @@ header h1 {
     margin: auto;
 }
 
+.mission_content p{
+    padding: 2rem 3rem;
+    box-shadow: 0.5rem 0.5rem #002642, -0.5rem -0.5rem #002642;
+}
+.approach_content p{
+    padding: 2rem 3rem;
+    box-shadow: 0.5rem 0.5rem #002642, -0.5rem -0.5rem #002642;
+}
+
 .our__approach {
     margin: 5rem 6rem;
     padding: 4rem;
@@ -106,7 +111,6 @@ header h1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
-    box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
 }
 
 .our__approach h2{
@@ -121,9 +125,7 @@ header h1 {
 }
 
 .contactus{
-    padding: 3rem 6rem;
-    margin: 2rem 0 0;
-    background-color: #f5f3f1;
+    margin: 5rem 6rem;
 }
 
 .contactus h2{
@@ -131,7 +133,11 @@ header h1 {
     margin-bottom: 1rem;
 }
 
-.contactus button{
+.contactus p{
+    margin: 0 0 2rem 0; 
+}
+
+.contactus a{
     display: block;
-    margin: 1rem auto 0;
+    margin: auto;
 }

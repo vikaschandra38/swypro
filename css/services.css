@@ -1,20 +1,14 @@
-header {
-    width: 100%;
-    height: calc(100vh - 4rem);
+.services__header {
     position: relative;
-    margin-bottom: 4rem;
+    height: calc(100vh - 5rem);
     background-image: url(../images/Sprinkle.svg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    justify-content: center;
     align-items: center;
-}
-
-header img{
-    width: 500x;
-    height: 500px;
+    justify-content: center;
+    margin: 5rem 0;
 }
 
 header h1 {
@@ -26,17 +20,13 @@ header h1 span{
     color: #f9ff00;
 }
 
-main{
-    background-color: whitesmoke;
-}
-
 .our__requirements {
     margin: 5rem 6rem;
 }
 
 .our__requirements h2 {
     text-align: center;
-    margin: 3rem 0 2rem 2rem;
+    margin-bottom: 2rem;
 }
 
 .tech_stack {
@@ -135,4 +125,22 @@ main{
 
 .tech_stack .card .face.face2 .content h3 a {
     color: #f9ff00;
+}
+
+.contactus{
+    margin: 5rem 6rem;
+}
+
+.contactus h2{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.contactus p{
+    margin: 0 0 2rem 0; 
+}
+
+.contactus a{
+    display: block;
+    margin: auto;
 }

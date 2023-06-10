@@ -24,7 +24,6 @@
 }
 
 body {
-    /* background-color: var(--color-bg); */
     font-family: var(--font-family2);
     position: relative;
     display: flex;
@@ -70,7 +69,7 @@ a {
     display: flex;
 }
 
-.flex-column{
+.flex-column {
     flex-direction: column;
 }
 
@@ -153,13 +152,13 @@ nav .nav__container {
 
 header {
     position: relative;
-    top: 5rem;
     overflow: hidden;
-    padding: 4rem 6rem;
     background-color: var(--color-bg-white);
 }
 
 .header__container {
+    margin: 5rem 6rem;
+    height: calc(100vh - 5rem); 
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 1fr;
@@ -201,18 +200,26 @@ main {
     position: relative;
 }
 
-.intro__container {
+.intro__container{
     margin: 5rem 6rem;
-    padding: 2rem;
+}
+.intro__container h2{
+    text-align: center;
+    margin: 3rem 0 2rem 2rem;
+}
+
+.intro-content {
+    padding: 0 2rem;
     display: grid;
     align-items: center;
     grid-template-columns: 2fr 1fr;
     gap: 2rem;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: white;
+    box-shadow: 0.5rem 0.5rem #002642, -0.5rem -0.5rem #002642;
 }
 
-.intro__container p {
-    margin: 1rem 0;
+.intro__left p{
+    margin: 0 0 2rem 0;
 }
 
 .intro__right img {
@@ -220,65 +227,25 @@ main {
     width: 400px;
 }
 
-.custom-btn {
-    width: 130px;
-    height: 40px;
-    color: #fff;
-    border-radius: 5px;
-    padding: 10px 25px;
-    font-weight: 500;
-    background: transparent;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    display: inline-block;
-    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
-        7px 7px 20px 0px rgba(0, 0, 0, .1),
-        4px 4px 5px 0px rgba(0, 0, 0, .1);
-    outline: none;
-}
-
 .button {
-    line-height: 42px;
-    padding: 0;
+    cursor: pointer;
+    box-shadow: -1px 3px 3px 0 rgba(80, 80, 80, .2);
+    width: 140px;
+    padding: 15px 20px;
+    margin-top: 2rem;
     border: none;
-    background: rgb(255, 27, 0);
-    background: linear-gradient(0deg, rgba(255, 27, 0, 1) 0%, rgba(251, 75, 2, 1) 100%);
+    border-radius: 36px;
+    color: #fff;
+    background: #002642;
+    transition: all 0.16s ease-in;
+    font-size: medium;
+    font-family: var(--font-family2);
 }
 
 .button:hover {
-    color: #f0094a;
-    background: transparent;
-    box-shadow: none;
-}
-
-.button:before,
-.button:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 2px;
-    width: 0;
-    background: #f0094a;
-    box-shadow:
-        -1px -1px 5px 0px #fff,
-        7px 7px 20px 0px #0003,
-        4px 4px 5px 0px #0002;
-    transition: 400ms ease all;
-}
-
-.button:after {
-    right: inherit;
-    top: inherit;
-    left: 0;
-    bottom: 0;
-}
-
-.button:hover:before,
-.button:hover:after {
-    width: 100%;
-    transition: 800ms ease all;
+    background: none;
+    color: #002642;
+    box-shadow: 0 0 0 1px #002642;
 }
 
 .services__container {
@@ -456,7 +423,7 @@ main {
     padding: 0 6rem;
     background-color: #fefefe;
     margin: 2rem auto;
-    /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+    gap: 2rem;
 }
 
 .connect__block h3 {
@@ -476,6 +443,7 @@ main {
     justify-content: center;
     padding: 2rem;
     background-color: rgb(251 251 251);
+    box-shadow: 0.5rem 0.5rem #002642, -0.5rem -0.5rem #002642;
 }
 
 .connect__block button {
@@ -504,21 +472,37 @@ footer {
     padding-bottom: 15px;
 }
 
-footer p{
+footer p {
     font-size: small;
 }
 
-.contact_info_sec img{
-   height: 32px;
-   width: 32px;
-   cursor: pointer;
+.contact_info_sec img {
+    height: 32px;
+    width: 32px;
+    cursor: pointer;
 }
 
 .social_item_inner {
     text-align: center;
 }
 
-.copyright{
+.social_item_inner a img {
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.social_item_inner a img:first-of-type {
+    border-bottom-left-radius: 24px;
+}
+
+.social_item_inner a:last-of-type img {
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+    border-bottom-left-radius: 0;
+}
+
+.copyright {
     padding: 1rem 0;
     text-align: center;
     color: var(--color-white);

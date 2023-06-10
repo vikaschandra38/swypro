@@ -82,24 +82,29 @@
 
         <main>
             <section data-aos="fade-up" class="intro__container">
-                <div class="intro__left">
-                    <h2>RECRUITMENT & CONSULTING PARTNER</h2>
-                    <p>We specialize in providing innovative and tailored solutions to meet your talent acquisition and
-                        business consulting needs. With our deep industry expertise and commitment to excellence, we
-                        empower
-                        organizations to thrive and achieve their goals.</p>
-                    <p> At Swypro, we understand that finding the right talent is crucial for your success. Our
-                        dedicated
-                        team of recruitment experts utilizes cutting-edge strategies and a vast network to identify and
-                        attract top-tier candidates who perfectly align with your organization's culture and
-                        requirements.
-                        We take the time to understand your unique needs and provide customized recruitment solutions
-                        that
-                        ensure you have access to the best talent in the market.</p>
-                    <button class="custom-btn button">Read more</button>
-                </div>
-                <div class="intro__right">
-                    <img src="images/discussion.gif" alt="discussion">
+                <h2>RECRUITMENT & CONSULTING PARTNER</h2>
+                <div class="intro-content">
+                    <div class="intro__left">
+                        <p>We specialize in providing innovative and tailored solutions to meet your talent acquisition
+                            and
+                            business consulting needs. With our deep industry expertise and commitment to excellence, we
+                            empower
+                            organizations to thrive and achieve their goals.</p>
+                        <p> At Swypro, we understand that finding the right talent is crucial for your success. Our
+                            dedicated
+                            team of recruitment experts utilizes cutting-edge strategies and a vast network to identify
+                            and
+                            attract top-tier candidates who perfectly align with your organization's culture and
+                            requirements.
+                            We take the time to understand your unique needs and provide customized recruitment
+                            solutions
+                            that
+                            ensure you have access to the best talent in the market.</p>
+                        <a href="./aboutus.html" class="button">Know more</a>
+                    </div>
+                    <div class="intro__right">
+                        <img src="images/discussion.gif" alt="discussion">
+                    </div>
                 </div>
             </section>
 
@@ -224,7 +229,7 @@
                             face and are dedicated to providing tailored solutions that drive your success. Let's
                             collaborate
                             and embark on a transformative journey that propels your business forward.</p>
-                        <button class="custom-btn button">Contact Us</button>
+                        <a href="./contactus.html" class="button">Contact Us</a>
                     </div>
                     <div>
                         <h3>APPLICANTS</h3>
@@ -237,7 +242,7 @@
                             showcase your skills, connect with us today and let's explore how we can help you achieve
                             your
                             professional goals.</p>
-                        <button class="custom-btn button">Contact Us</button>
+                        <a href="./contactus.html" class="button">Contact Us</a>
                     </div>
                     <img src="images/interview_copy.gif" alt="interview">
                 </div>
@@ -268,15 +273,15 @@
                     <img src="images/phone.png" alt="phone">
                     <div>
                         <h4>Phone</h4>
-                        <p>+91 1234 567890</p>
+                        <p>+1 705 772 4753</p>
                     </div>
                 </div>
                 <div class="flex flex-column info_single align-center social_item_inner">
                     <h4>Social Us</h4>
                     <div class="flex info_single align-start gap-2">
-                        <a href="#"><img src="images/facebook.gif" alt="facebook"></a>
+                        <a href="#"><img src="images/fb.webp" alt="facebook"></a>
                         <a href="#"><img src="images/linkedin.gif" alt="linkedin"></a>
-                        <a href="#"><img src="images/whatsapp.gif" alt="whatsapp"></a>
+                        <a href="tel:+17057724753"><img src="images/whatsapp.gif" alt="whatsapp"></a>
                     </div>
                 </div>
             </div>
@@ -288,7 +293,7 @@
             </div>
         </footer>
     </div>
-    </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
         integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -300,7 +305,24 @@
         integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <script src="main.js"></script>
+    <script>
+        $(document).ready(function () {
+            var owl = $(".owl-carousel");
+            owl.owlCarousel({
+                items: 1,
+                loop: true,
+                margin: 10,
+                autoplay: true,
+                autoplayTimeout: 1000,
+                autoplayHoverPause: false,
+            });
+
+            AOS.init({
+                duration: 600,
+            });
+        });
+
+    </script>
 
 </body>
 

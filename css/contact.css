@@ -1,15 +1,13 @@
 /* CONTACT US */
 
-section {
-    display: flex;
+.contactus_form {
+    margin: 6rem 6rem;
+    display: grid;
     align-items: center;
-    justify-content: space-around;
-    gap: 2rem;
-    margin: 0 3rem 2rem 3rem;
-    padding: 0rem 6rem;
+    grid-template-columns: 1fr 1fr;
 }
 
-section img {
+.contactus_form img {
     height: 400px;
     width: 600px;
 }
@@ -44,19 +42,6 @@ textarea {
     box-shadow: none;
     outline: none;
     border: 3px solid #002642;
-}
-
-button.contact_form_submit {
-    background-color: #002642;
-    border: none;
-    color: #fff;
-    padding: 10px 15px;
-    margin-top: 25px;
-    border-radius: 35px;
-    cursor: pointer;
-    font-size: 14px;
-    letter-spacing: 2px;
-    width: 200px;
 }
 
 label {
