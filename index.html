@@ -314,7 +314,18 @@
                 margin: 10,
                 autoplay: true,
                 autoplayTimeout: 1000,
+                responsiveClass: true,
                 autoplayHoverPause: false,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: false
+                    },
+                    500: {
+                        items: 3,
+                        nav: false
+                    }
+                }
             });
 
             AOS.init({
