@@ -25,9 +25,7 @@
 
 body {
     font-family: var(--font-family2);
-    position: relative;
     display: flex;
-    flex-direction: column;
 }
 
 h1,
@@ -103,6 +101,8 @@ nav {
     height: 5rem;
     position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     z-index: 11;
     background-color: var(--color-bg-nav);
 }
@@ -574,4 +574,57 @@ footer p {
         transform: translateY(-300%);
     }
 
+}
+
+
+@media only screen and (max-width: 500px) {
+    .intro__container{
+        margin: 2rem;
+    }
+
+    .intro-content{
+        grid-template-columns: 1fr;
+        row-gap: 4rem;
+        padding: 2rem;
+    }
+
+    .services__container{
+        margin: 2rem;
+    }
+    .services{
+        grid-template-columns: 1fr;
+        row-gap: 4rem;
+    }
+
+    .whyus__container{
+        margin: 2rem;
+    }
+
+    .ol-cards{
+        grid-template-columns: 1fr;
+        row-gap: 4rem;
+    }
+
+    .connect__container{
+        margin: 4rem 2rem;
+    }
+
+    .connect__block{
+        grid-template-columns: 1fr;
+        row-gap: 4rem;
+        padding: 0;
+    }
+
+    .connect__block :nth-child(4){
+        grid-row-start: 3;
+    }
+
+    .contact_info_sec{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .social_item_inner{
+        align-items: start;
+    }
 }
