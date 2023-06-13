@@ -580,17 +580,17 @@ footer p {
 
 @media only screen and (max-width: 500px) {
 
+
+
     p,
     a,
-    div,
     address {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     footer p {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
-
     .nav__container {
         display: grid;
         grid-template-columns: 1fr;
@@ -598,11 +598,11 @@ footer p {
         align-items: start;
     }
 
-    .nav__container a{
+    .nav__container a {
         text-align: center;
     }
 
-    .nav__container ul{
+    .nav__container ul {
         gap: 0;
     }
 
@@ -619,8 +619,17 @@ footer p {
         margin: 0;
     }
 
+    h1.headline{
+        font-size: 5rem;
+    }
+
+    .headline{
+        flex-direction: column;
+    }
+
+
     .header__left .words {
-        height: 25px;
+        height: 97px;
         overflow: hidden;
     }
 
