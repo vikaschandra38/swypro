@@ -15,6 +15,10 @@
         href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;800&family=Roboto+Condensed:wght@700&display=swap"
         rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- OWL CAROUSEL -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
         integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
@@ -35,12 +39,15 @@
     <nav>
         <div class="nav__container flex align-center justify-between ">
             <a href="index.html" class="logo">S W Y <span><strong>P R O</strong></span></a>
-            <ul class="flex align-center justify-between gap-4">
+            <ul class="nav-list flex align-center justify-between gap-4">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="aboutus.html">About Us</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="contactus.html">Contact Us</a></li>
             </ul>
+            <div class="toggle-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </div>
     </nav>
 
@@ -80,8 +87,8 @@
             </div>
         </header>
 
-        <main>
-            <section data-aos="fade-up" class="intro__container">
+         <main>
+  <!--           <section data-aos="fade-up" class="intro__container">
                 <h2>RECRUITMENT & CONSULTING PARTNER</h2>
                 <div class="intro-content">
                     <div class="intro__left">
@@ -106,9 +113,9 @@
                         <img src="images/discussion.gif" alt="discussion">
                     </div>
                 </div>
-            </section>
+            </section> -->
 
-            <section data-aos="fade-up" class="services__container">
+<!--             <section data-aos="fade-up" class="services__container">
                 <h2>OUR SERVICES</h2>
                 <div class="services">
                     <div class="service">
@@ -246,10 +253,10 @@
                     </div>
                     <img src="images/interview_copy.gif" alt="interview">
                 </div>
-            </section>
+            </section> -->
         </main>
 
-        <footer>
+  <!--       <footer>
             <div class="contact_info_sec">
                 <div class="flex info_single align-start gap-2">
                     <img src="images/location.png" alt="address">
@@ -291,7 +298,7 @@
                 icon by
                 <a target="_blank" href="https://icons8.com">Icons8</a>
             </div>
-        </footer>
+        </footer> -->
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
@@ -322,7 +329,7 @@
                         nav: false
                     },
                     500: {
-                        items: 3,
+                        items: 1,
                         nav: false
                     }
                 }
@@ -331,6 +338,13 @@
             AOS.init({
                 duration: 600,
             });
+
+            function showMenu(){
+                const ul = document.querySelector(".nav-list");
+                ul.classList.toggle("nav-active");
+            }
+            const toggleBtn = document.querySelector(".toggle-btn");
+            toggleBtn.addEventListener('click', showMenu);
         });
 
     </script>
