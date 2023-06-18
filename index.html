@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
     <title>Swypro</title>
 
 
@@ -14,6 +14,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;800&family=Roboto+Condensed:wght@700&display=swap"
         rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- OWL CAROUSEL -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
@@ -35,12 +39,15 @@
     <nav>
         <div class="nav__container flex align-center justify-between ">
             <a href="index.html" class="logo">S W Y <span><strong>P R O</strong></span></a>
-            <ul class="flex align-center justify-between gap-4">
+            <ul class="nav-list flex align-center justify-between gap-4">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="aboutus.html">About Us</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="contactus.html">Contact Us</a></li>
             </ul>
+            <div class="toggle-btn">
+                <i id="menuIcon" class="fa-solid fa-bars"></i>
+            </div>
         </div>
     </nav>
 
@@ -322,7 +329,7 @@
                         nav: false
                     },
                     500: {
-                        items: 3,
+                        items: 1,
                         nav: false
                     }
                 }
@@ -331,6 +338,18 @@
             AOS.init({
                 duration: 600,
             });
+
+            function showMenu() {
+                const ul = document.querySelector(".nav-list");
+                ul.classList.toggle("nav-active");
+                if(ul.classList.contains('nav-active')){
+                    document.querySelector("#menuIcon").classList.add('fa-close');
+                }else{
+                    document.querySelector("#menuIcon").classList.remove('fa-close');
+                }
+            }
+            const toggleBtn = document.querySelector(".toggle-btn");
+            toggleBtn.addEventListener('click', showMenu);
         });
 
     </script>
