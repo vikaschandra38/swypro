@@ -112,15 +112,10 @@ nav .nav__container {
     margin: 0 auto;
 }
 
-.nav__container a.logo {
-    font-weight: 800;
-    font-size: 1.8rem;
-}
-
-.nav__container a span {
-    position: relative;
-    color: var(--color-text-primary);
-    border-bottom: 4px solid var(--color-text-primary);
+.nav__container img{
+    width: auto;
+    min-width: 175px;
+    height: 60px;
 }
 
 .nav__container ul li a {

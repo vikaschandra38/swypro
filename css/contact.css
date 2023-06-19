@@ -55,3 +55,23 @@ label {
 #file-chosen {
     font-family: sans-serif;
 }
+
+@media only screen and (max-width: 500px) {
+    .contactus_form{
+        margin: 2rem 1rem;
+        margin-top: 6rem;
+        grid-template-columns: 1fr;
+        height: 100%;
+        gap: 3rem;
+    }
+
+    .contactus_form h1{
+        font-size: 5rem;
+    }
+
+    .contactus_form img{
+        width: 320px;
+        height: 320px;
+        object-fit: contain;
+    }
+}
